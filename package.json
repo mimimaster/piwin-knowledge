@@ -1,0 +1,23 @@
+{
+  "name": "piwin-knowledge-plugin",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone piwin plugin for FSRS flashcards, local folder RAG, and Canvas study decks",
+  "scripts": {
+    "build": "pnpm -r run build && node -e \"import('esbuild').then(({build}) => build({entryPoints:['packages/mcp-server/src/index.ts'],bundle:true,platform:'node',format:'esm',target:'node22',outfile:'dist/mcp-server.mjs'}))\"",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "VITEST_MAX_FORKS=2 VITEST_MAX_THREADS=2 pnpm --workspace-concurrency=1 -r run test"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
