@@ -24,7 +24,6 @@
   },
   "dependencies": {
     "@langchain/textsplitters": "^1.0.1",
-    "js-tiktoken": "^1.0.21",
     "remark-parse": "^11.0.0",
     "unified": "^11.0.5",
     "@piwin-knowledge/core": "workspace:*"
