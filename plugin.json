@@ -4,7 +4,7 @@
   "name": "Knowledge & Flashcards",
   "description": "Standalone FSRS flashcard study engine and local folder RAG retrieval exposed via MCP + Canvas skill.",
   "skills": [
-    "skills/knowledge-study/SKILL.md"
+    "skills/knowledge-study"
   ],
   "mcpServers": {
     "knowledge": {
